@@ -1,0 +1,26 @@
+<?php
+return array(
+	'Watpo Thai Traditional Massage' => 'Watpo Thai Traditional Massage',
+	'ABOUT' => 'About us',
+	'GALLERY' => 'Gallery',
+	'MAP' => 'Map',
+	'NEWSMEDIA' => 'News & Media',
+	'CONTACT' => 'Contact us',
+	'LOGIN' => 'Login',
+	'ADMIN' => 'Admin',
+	'COPYRIGHT' => 'All Rights Reserved &copy; 2003 - 2013',
+	'METROUI' => 'Styled with',
+	'INTERESTINGARTICLES' => 'Articles of interest',
+	'INTERESTINGLINKS' => 'Links of interest',
+	'ERROR' => 'Error',
+	'MORE' => 'More',
+	'' => '',
+	'' => '',
+	'' => '',
+	'' => '',
+	'' => '',
+	'' => '',
+	'' => '',
+	'' => '',
+);
+?>
