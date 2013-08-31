@@ -26,9 +26,11 @@
 		?>
 		<div class="slide image" id="slide<?php echo $i ?>">
 			<img src="<?php echo $slide['img'] ?>" style="height: <?php echo $height ?> ; width: <?php echo $width ?> ;"/>
+			<?php if ( isset ($slide['desc']) && $slide['desc'] != "" ) { ?>
 			<div class="description">
 				<?php echo $slide['desc'] ?>
 			</div>
+			<?php } ?>
 		</div>
 	<?php }	?>
 

@@ -38,9 +38,10 @@ class SiteController extends Controller
 	{
 		//Yii::app()->session['lang'] = 'en';
 		//echo Yii::app()->session['lang']; // Prints "value"
+		$mainArticles = $this->fetchMainArticle(Yii::app()->language);
 		$interestingArticles = $this->fetchInterestingArticles(Yii::app()->language);
 		$albums = $this->fetchMainCarousal(Yii::app()->language);
-		$this->render('index', array('interestingArticles' => $interestingArticles, 'album' => $albums[0]));
+		$this->render('index', array('interestingArticles' => $interestingArticles, 'album' => $albums[0], 'mainArticles' => $mainArticles ));
 	}
 
 	public function actionPage($view = '')
@@ -232,6 +233,16 @@ class SiteController extends Controller
 	/********************************************************************************************
 	 *	Private helper functions for SiteController
 	 ********************************************************************************************/
+
+	private function fetchMainArticle($lang)
+	{
+		$article = Article::model()->findAllBySql('select a.header_'.$lang.', a.content_'.$lang.'
+												from article a 
+												inner join article_category ac on a.article_category_id = ac.id 
+												where ac.category_cd = "ADHOC" and a.sort_order = 1;');
+
+		return $article;
+	}
 
 	private function fetchGalleryAlbums($lang)
 	{

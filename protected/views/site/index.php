@@ -22,6 +22,29 @@ $this->pageTitle=Yii::t('strings', Yii::app()->name);
                         </div>
                     </div>
                 </div>
+
+				<!-- Main Article-->
+				<?php 
+	
+					foreach($mainArticles as $mainArticle) { 
+				?>
+					<div class="row">
+						<div class="span12">
+							<h2> 
+								<?php echo $mainArticle['header_'.$this->lang] ?> 			
+							</h2>
+							<div class="justify">
+
+								<?php echo $mainArticle['content_'.$this->lang] ?>
+
+							</div>
+
+						</div>
+					</div>
+				<?php 
+					} 
+				?>
+				<!-- Main Article-->
             </div>
 
             <div class="grid">
