@@ -1,6 +1,68 @@
+@font-face
+{
+font-family: cordia;
+src: url(../fonts/cordia.ttf);
+}
+
+@font-face
+{
+font-family: cordia;
+src: url(../fonts/cordiab.ttf);
+font-weight:bold;
+}
+
+@font-face
+{
+font-family: cordia;
+src: url(../fonts/cordiai.ttf);
+font-style:italic;
+}
+
+@font-face
+{
+font-family: cordia;
+src: url(../fonts/cordiaz.ttf);
+font-weight:bold;
+font-style:italic;
+}
+
 body {
     background-color: #fff;
 }
+
+.english body,
+.english p,
+.english div,
+.english a,
+.english .link,
+.english ul li,
+.english ol li,
+.english .span,
+.english h1,h2,h3,h4,h5,h6 {
+  font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif !important;
+}
+
+.thai body,
+.thai p,
+.thai div,
+.thai a,
+.thai .link,
+.thai ul li,
+.thai ol li,
+.thai .span{
+  font-family:  Calibri, cordia, 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif !important;
+  font-size: 14pt !important;
+  letter-spacing: 0.5pt !important;
+}
+
+.logoimage{
+	height:70px !important;
+}
+
+.thai h1,h2,h3,h4,h5,h6  {
+  font-family: Calibri, cordia, 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif !important;
+}
+
 .metrouicss .page {
     width: 940px ;
     margin: auto;
@@ -143,6 +205,10 @@ float: right !important;
 	text-align: left;
 }
 
+.metrouicss h2, .metrouicss h3 {
+    margin: 20px 0 10px 0;
+}
+
 @media (min-width: 768px) and (max-width: 979px) {
     .metrouicss .page {
         width: 724px;
@@ -170,6 +236,10 @@ float: right !important;
 
 	.right{
 	float: left !important;
+	}
+
+	.logoimage{
+		height:70px !important;
 	}
 
 }
@@ -214,7 +284,7 @@ float: right !important;
     }
 
     .metrouicss h3 {
-        line-height: 11px;
+        //line-height: 11px;
     }
 
     .metrouicss .no-mobile {
@@ -224,6 +294,11 @@ float: right !important;
     .metrouicss #carousel1 {
         height: 300px !important;
     }
+
+	.logoimage{
+		height:50px !important;
+	}
+
 }
 
 @media (max-width: 480px) {
@@ -244,6 +319,10 @@ float: right !important;
 
 	.element{
 		height:100% !important;
-	};
+	}
+
+	.logoimage{
+		height:30px !important;
+	}
 
 }
