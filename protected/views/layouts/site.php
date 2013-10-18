@@ -2,7 +2,7 @@
 
 	<?php $this->renderPartial('/layouts/_header') ?>
 
-	<body class="metrouicss" >
+	<body class="metrouicss <?php echo Yii::t('strings', 'LANGUAGE'); ?>" >
 
 	<?php $this->renderPartial('/layouts/_navigation') ?>
 

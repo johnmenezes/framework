@@ -86,6 +86,18 @@ $this->pageTitle=Yii::t('strings', Yii::app()->name);
                 </div>
             </div>
 
+		<div class="grid">
+			<p>
+				<?php $this->widget('application.components.SocialShareWidget', array(
+					'url' => 'www.watpomassage.com' . Yii::app()->request->requestUri,				//required
+					'services' => array('facebook', 'twitter', 'google'),   //optional
+					'htmlOptions' => array('class' => 'right'),				//optional
+					'popup' => true,										//optional
+					));
+				?>
+			</p>
+		</div>
+
         </div>
     </div>
 </div>

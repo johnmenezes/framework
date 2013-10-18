@@ -21,7 +21,7 @@ $this->pageTitle=Yii::t('strings', Yii::app()->name) . ' - ' . $model['header_'.
 		<div class="grid">
 			<p>
 				<?php $this->widget('application.components.SocialShareWidget', array(
-					'url' => Yii::app()->request->requestUri,				//required
+					'url' => 'www.watpomassage.com' . Yii::app()->request->requestUri,				//required
 					'services' => array('facebook', 'twitter', 'google'),   //optional
 					'htmlOptions' => array('class' => 'right'),				//optional
 					'popup' => true,										//optional

@@ -20,9 +20,14 @@ $this->pageTitle=Yii::t('strings', Yii::app()->name) . ' - ' . Yii::t('strings',
 
 			<?php else: ?>
 
-			<p>
-			If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-			</p>
+			<h2> <?php echo Yii::t('strings', 'CONTACT_WATPOTITLE') ?> </h2>
+			<p> <?php echo Yii::t('strings', 'CONTACT_WATPOADDRESS') ?> </p>
+			<p> <?php echo Yii::t('strings', 'CONTACT_WATPOTEL') ?> </p>
+			<p> <?php echo Yii::t('strings', 'CONTACT_WATPOEMAIL') ?> </p>
+			
+			<br>
+			
+			<p> <?php echo Yii::t('strings', 'CONTACT_INFO') ?> </p>
 
 			<div class="form">
 
@@ -55,6 +60,15 @@ $this->pageTitle=Yii::t('strings', Yii::app()->name) . ' - ' . Yii::t('strings',
 						<button class="btn-clear"></button>
 					</div>
 					<?php echo $form->error($model,'email'); ?>
+				</div>
+
+				<div class="row">
+					<?php echo $form->labelEx($model,'telephone'); ?>
+					<div class="input-control text">
+						<?php echo $form->textField($model,'telephone'); ?>
+						<button class="btn-clear"></button>
+					</div>
+					<?php echo $form->error($model,'telephone'); ?>
 				</div>
 
 				<div class="row">
@@ -92,7 +106,7 @@ $this->pageTitle=Yii::t('strings', Yii::app()->name) . ' - ' . Yii::t('strings',
 				<?php endif; ?>
 
 				<div class="row buttons">
-					<?php echo CHtml::submitButton('Submit', array('class' => 'bg-color-red')); ?>
+					<?php echo CHtml::submitButton( Yii::t('strings', 'SUBMIT'), array('class' => 'bg-color-greenDark')); ?>
 				</div>
 
 			<?php $this->endWidget(); ?>

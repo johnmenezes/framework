@@ -7,10 +7,9 @@ $this->pageTitle=Yii::t('strings', Yii::app()->name) . ' - ' . Yii::t('strings',
     <div class="page-region">
         <div class="page-region-content">
 
-		<h1>News & Media</h1>
+		<h1> <?php echo Yii::t('strings', 'NEWSMEDIA') ?> </h1>
 
-		<p>This is a "static" page. You may change the content of this page
-		by updating the file <code><?php echo __FILE__; ?></code>.</p>
+		<p>
 
 		</div>
 	</div>

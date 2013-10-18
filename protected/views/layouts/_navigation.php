@@ -6,7 +6,7 @@
 
 			<a href="index.php">
 				<span class="element brand">
-					<img class="place-left" src="images/logo32.png" style="height: 70px"/>
+					<img class="place-left logoimage" src="images/logo32.png" />
 					<?php echo Yii::t('strings',Yii::app()->name); ?>
 				</span>
 			</a>

@@ -17,7 +17,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'parent_id'); ?>
-		<?php echo $form->dropDownList($model,'parent_id', CHtml::listData(Menu::model()->findAllBySql('select id, desc_en from Menu where parent_id is null;'), 'id', 'desc_en'), array('empty'=>'') ); ?>
+		<?php echo $form->dropDownList($model,'parent_id', CHtml::listData(Menu::model()->findAllBySql('select id, desc_en from menu where parent_id is null;'), 'id', 'desc_en'), array('empty'=>'') ); ?>
 		<?php echo $form->error($model,'parent_id'); ?>
 	</div>
 
