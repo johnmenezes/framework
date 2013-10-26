@@ -66,18 +66,10 @@ $this->pageTitle=Yii::t('strings', Yii::app()->name);
 
 						<?php $this->widget('application.components.UIAccordion', array(
 							'accordions' => array(
-								array(	'header' => 'www.hoteltravel.com', 
-										'content' => 'Text <p>sub content</p>'),
-								array(	'header' => 'Oriental And Beyond', 
-										'content' => 'Text <div> subcontent 2</div>'),
 								array(	'header' => 'Medicos Massage Product', 
-										'content' => 'Text'),
-								array(	'header' => 'Holidays please Thailand', 
-										'content' => 'Holidays guide'),
-								array(	'header' => 'Cheap Khao San Hotel', 
-										'content' => 'Text'),
+										'content' => '<p><a href = "http://www.thaimedicos.com/"> Visit site </a></p>'),
 								array(	'header' => 'Chetawan Retreat Resort', 
-										'content' => 'Text<p>sub content</p>')
+										'content' => '<p><a href = "http://www.chetawanretreatresort.com/"> Visit site </a></p>')
 							)
 						)); ?>
 
