@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="Watpo Thai Traditionl Medical School">
     <meta name="author" content="WatpoTTM">
-    <meta name="keywords" content="Thai Traditional Massage">
-
+	<meta name="keywords" content="Thai Massage,Massage Course,Massage Knowledge,Massage School,Thai Massage Course,Thai Massage Knowledge,Thai Massage School,Spa,Therapy,Therapist,Medical Massage">
+	<meta name="description" content="Thai Massage,Massage Course,Massage Knowledge,Massage School,Thai Massage Course,Thai Massage Knowledge,Thai Massage School">
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/modern.css" rel="stylesheet">
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/modern-responsive.css" rel="stylesheet">
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/site.css" rel="stylesheet" type="text/css">
