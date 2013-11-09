@@ -325,4 +325,14 @@ float: right !important;
 		height:30px !important;
 	}
 
+	.metrouicss .longCarousalImage {
+		max-height:100% !important;
+	}
+
+	.metrouicss .wideCarousalImage {
+		max-height:200px !important;
+		max-width:250px !important;
+	}
+
+
 }
