@@ -17,15 +17,24 @@
 			$i++ ;
 			$height = '100%';
 			$width = '100%';
-
+			$type = '';
 			if ( isset($slide['height']) && $slide['height'] != null && isset($slide['width']) && $slide['width'] != null)
 			{
 				$height = $this->height.'px';
 				$width = ( $slide['width'] * $this->height / $slide['height'] ) . 'px';
+				
+				if ( $slide['height'] > $slide['width'] )
+				{
+					$type = 'long';
+				}
+				else
+				{
+					$type = 'wide';
+				}
 			}
 		?>
 		<div class="slide image" id="slide<?php echo $i ?>">
-			<img src="<?php echo $slide['img'] ?>" style="height: <?php echo $height ?> ; width: <?php echo $width ?> ;"/>
+			<img src="<?php echo $slide['img'] ?>" class = "<?php echo $type ?>CarousalImage" style="height: <?php echo $height ?> ; width: <?php echo $width ?> ;"/>
 			<?php if ( isset ($slide['desc']) && $slide['desc'] != "" ) { ?>
 			<div class="description">
 				<?php echo $slide['desc'] ?>
