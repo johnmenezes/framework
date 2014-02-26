@@ -23,7 +23,7 @@ return array(
 	'SUBMIT' => 'Submit',
 	'CONTACT_WATPOTITLE' => 'WATPO Thai Traditional Medical School',
 	'CONTACT_WATPOADDRESS' => 'Address : 361/33-34 Maharach rd., Prabarommaharajawang, Pranakorn, Bangkok 10200',
-	'CONTACT_WATPOTEL' => 'Tel : 0 2622 3551, 0 2221 3686  Fax : 0 2622 3550',
+	'CONTACT_WATPOTEL' => 'Tel : 0 2622 3551, 0 2622 3533  Fax : 0 2622 3550',
 	'CONTACT_WATPOEMAIL' => 'e-mail : watpo.ttm@gmail.com',
 	'CONTACT_INFO' => 'Please fill up the form in order to contact us.',
 	'LANGUAGE' => 'english',

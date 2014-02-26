@@ -23,7 +23,7 @@ return array(
 	'SUBMIT' => ' ยืนยัน',
 	'CONTACT_WATPOTITLE' => 'โรงเรียนแพทย์แผนโบราณวัดพระเชตุพน (วัดโพธิ์)',
 	'CONTACT_WATPOADDRESS' => ' ที่อยู่ ๓๙๒/๓๓-๓๔ ซอยเพ็ญพัฒน์ ๑ ถนนมหาราช เขตพระนคร กรุงเทพฯ ๑๐๒๐๐',
-	'CONTACT_WATPOTEL' => 'โทร: ๐๒-๖๒๒ ๓๕๕๑, ๐๒-๒๒๑ ๓๖๘๖ โทรสาร: ๐๒-๖๒๒ ๓๕๕๐',
+	'CONTACT_WATPOTEL' => 'โทร: ๐๒-๖๒๒ ๓๕๕๑, ๐๒-๖๒๒ ๓๕๓๓ โทรสาร: ๐๒-๖๒๒ ๓๕๕๐',
 	'CONTACT_WATPOEMAIL' => 'e-mail : watpo.ttm@gmail.com',
 	'CONTACT_INFO' => 'กรุณากรอกแบบฟอร์มเพื่อติดต่อเรา',
 	'LANGUAGE' => 'thai',
