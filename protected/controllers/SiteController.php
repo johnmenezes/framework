@@ -44,6 +44,14 @@ class SiteController extends Controller
 		$this->render('index', array('interestingArticles' => $interestingArticles, 'album' => $albums[0], 'mainArticles' => $mainArticles ));
 	}
 
+	public function actionNews()
+	{
+		//Yii::app()->session['lang'] = 'en';
+		//echo Yii::app()->session['lang']; // Prints "value"
+		$newsArticles = $this->fetchNewsArticles(Yii::app()->language);
+		$this->render('news', array('newsArticles' => $newsArticles));
+	}
+
 	public function actionPage($view = '')
 	{
 
@@ -203,7 +211,7 @@ class SiteController extends Controller
     {
         return array(
 			'selectLang - language',
-            'loadMenu + index, article, error, page, contact, gallery - language'
+            'loadMenu + index, article, error, page, contact, news, gallery - language'
         );
     }
 
@@ -300,6 +308,27 @@ class SiteController extends Controller
 		$returnArticles = array();
 		$articles = Article::model()->findAllBySql(	'select id, header_'.$lang.', content_'.$lang.'
 													from article where interest > 0 
+													order by id desc;');
+		foreach($articles as $article) {
+			// strip <h> tags from content
+			$content = $article['content_'.$lang];
+			$content = preg_replace('$<h[1-9]>$', '<b>', $content);
+			$content = preg_replace('$</h[1-9]>$', '</b>', $content);
+
+
+			$returnArticles[] = array(	'header' => $article['header_'.$lang], 
+										'content' => $content,
+										'link' => 'index.php?r=/site/article&id='.$article['id']);
+
+		}
+		return $returnArticles;
+	}
+
+	private function fetchNewsArticles($lang)
+	{
+		$returnArticles = array();
+		$articles = Article::model()->findAllBySql(	'select id, header_'.$lang.', content_'.$lang.'
+													from article where article_category_id = (select id from article_category where category_cd = \'NEWS\') 
 													order by id desc;');
 		foreach($articles as $article) {
 			// strip <h> tags from content
